@@ -14,6 +14,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black-text: #141414;
+  --white-text: #fbfbfb;
+  --primary-brand: #7a3145;
+  --accent: #d4bfc4;
+  --green-background: #576f35;
+  --details: #858585;
+  --transparent-black: rgba(20, 20, 20, 0.2);
+  --success-state: #3cbc81;
+  --error-state: #e74a3b;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

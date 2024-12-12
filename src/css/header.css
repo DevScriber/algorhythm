@@ -1,4 +1,113 @@
 .header {
+  background-color: #576f35;
+}
+.header-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.nav-list {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+.burger-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .burger-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .header-icon-box {
+    width: 16px;
+    height: 16px;
+  }
+  .header-icon {
+    width: 148px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 32px;
+  }
+  .header-logo {
+    gap: 9px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .header-logo {
+    margin-right: 366px;
+  }
+  .header-nav {
+    display: flex;
+  }
+  .nav-list {
+    display: flex;
+    gap: 8px;
+  }
+  /* .nav-item {
+    padding: 12px;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    color: #fbfbfb;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+      border-color 250ms ease-in-out;
+  } */
+  .nav-link {
+    padding: 12px;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    color: #fbfbfb;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out,
+      border-color 250ms ease-in-out;
+  }
+  .nav-link:hover {
+    color: #7a3145;
+    background-color: #d4bfc4;
+    border-color: #d4bfc4;
+  }
+  .nav-link:active {
+    background-color: #fbfbfb;
+    border-color: #fbfbfb;
+  }
+  .header-btn {
+    display: block;
+    margin-left: auto;
+    border-radius: 30px;
+    padding: 16px 32px;
+    background: #7a3145;
+    color: #fbfbfb;
+    border: none;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  }
+  .header-btn:hover {
+    background-color: #d4bfc4;
+    color: #7a3145;
+  }
+  .header-btn:active {
+    background-color: #fbfbfb;
+  }
+  .burger-btn {
+    display: none;
+  }
 }
 /* Удалите или измените padding, я его создал для корректной работы сборщика проекта vite */
